@@ -10,6 +10,7 @@
     "dev:lp": "PORT=3001 next dev"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.1",
     "framer-motion": "^12.6.3",
     "next": "15.2.4",
     "react": "^19.0.0",
