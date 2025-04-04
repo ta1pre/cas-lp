@@ -1,5 +1,10 @@
+'use client';
+
 import Image from "next/image";
 import styles from "./page.module.css";
+
+// シンプルなLINEログインボタンをインポート
+import LineLoginButton from '@/components/LineLoginButton';
 
 export default function Home() {
   return (
@@ -19,6 +24,11 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
+
+        {/* LINEログインボタンを追加 */}
+        <div className="mt-8 w-full max-w-xs mx-auto">
+          <LineLoginButton />
+        </div>
 
         <div className={styles.ctas}>
           <a
