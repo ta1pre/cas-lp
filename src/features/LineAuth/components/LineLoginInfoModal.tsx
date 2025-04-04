@@ -55,7 +55,7 @@ export function LineLoginInfoModal({ isOpen, onClose }: LineLoginInfoModalProps)
                 <div>
                   <p className="font-medium text-gray-800 mb-1">プライバシーと安全性</p>
                   <p className="text-sm text-gray-700">
-                  LINEログインは本人確認のためだけに使われ、<span className="font-bold text-pink-700">あなたの個人情報とLINEアカウントの安全は厳重に守られます。</span>メッセージの内容や友だちリストには一切アクセスしません。
+                  LINEログインは本人確認のためだけに使われ、<span className="font-bold text-pink-700">あなたの個人情報とLINEアカウントの安全は厳重に守られます。</span>認証以外の機能には一切アクセスしません。
                   </p>
                 </div>
               </div>
