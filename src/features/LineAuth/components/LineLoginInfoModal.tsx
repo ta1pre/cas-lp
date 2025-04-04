@@ -40,12 +40,13 @@ export function LineLoginInfoModal({ isOpen, onClose }: LineLoginInfoModalProps)
         <h3 className="text-xl font-bold mb-4 text-center">LINEで簡単登録って？</h3>
         
         <div className="space-y-4 text-gray-700 text-left">
-        <ul className="list-disc pl-5 space-y-3">
-  <li>めんどうな入力なし！LINEでサクッと登録完了</li>
-  <li>パスワードもいらないから毎回カンタンにログイン</li>
-  <li>LINEからの通知や勝手な投稿は一切ナシで安心◎</li>
-  <li>電話番号やメールアドレスの登録も不要！</li>
+<ul className="list-disc pl-5 space-y-3 text-[15px]">
+  <li>🔑 パスワード無しで毎回カンタン！</li>
+  <li>🚫 勝手な通知や投稿は一切ナシ！</li>
+  <li>📩 メアド・電話番号の入力も不要！</li>
+  <li>✅ LINEだけでサクッと登録完了！</li>
 </ul>
+
 
           
           <div className="border-t border-gray-200 my-4 pt-4">
