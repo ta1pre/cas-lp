@@ -17,7 +17,7 @@ interface LineLoginButtonProps {
  */
 export function LineLoginButton({
   className = '',
-  children = 'LINEで簡単登録！',
+  children = 'LINEで簡単登録！(3分)',
 }: LineLoginButtonProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
