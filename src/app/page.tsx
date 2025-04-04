@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 // シンプルなLINEログインボタンをインポート
-import LineLoginButton from '@/components/LineLoginButton';
+import { LineLoginButton } from '@/features/LineAuth';
 
 export default function Home() {
   return (
