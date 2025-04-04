@@ -1,3 +1,85 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Next.jsu306eu30edu30b4u3068u958bu767au30e1u30cbu30e5u30fcu3092u5b8cu5168u306bu975eu8868u793au306bu3059u308b */
+#__next-build-watcher,
+#__next-route-announcer,
+#__next-dev-menu,
+#__next-dev-menu-button,
+#__next-dev-menu-root,
+div[data-next-dev-menu],
+button[data-next-dev-menu-button],
+[rel="noopener noreferrer"],
+a[target="_blank"][rel="noopener noreferrer"],
+.vercel-badge,
+.nextjs-container-build-error,
+[data-nextjs-dialog],
+[data-nextjs-toast],
+[data-nextjs-terminal],
+[data-nextjs-codeframe],
+[data-nextjs-data-runtime-error],
+[data-nextjs-refresh-overlay-errors],
+[data-nextjs-refresh-overlay],
+[data-nextjs-toast-errors],
+[data-nextjs-toast-errors-parent],
+[data-nextjs-toast-errors-parent] *,
+[data-nextjs-refresh] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute !important;
+  z-index: -9999 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+}
+
+/* u30b9u30bfu30a4u30ebu5c5eu6027u3092u6301u3064u8981u7d20u3092u30bfu30fcu30bkeu30c3u30c8u306bu3059u308b */
+div[style*="position: fixed"],
+div[style*="position:fixed"],
+div[style*="bottom: 0"],
+div[style*="bottom:0"],
+div[style*="right: 0"],
+div[style*="right:0"],
+div[style*="bottom: 10px"],
+div[style*="bottom:10px"],
+div[style*="right: 10px"],
+div[style*="right:10px"],
+div[style*="z-index: 2147483647"],
+div[style*="z-index:2147483647"],
+div[style*="z-index: 9999"],
+div[style*="z-index:9999"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* u30dcu30c7u30a3u306bu76f4u63a5u8ffdu52a0u3055u308cu308bu8981u7d20u3092u30bfu30fcu30bkeu30c3u30c8u306bu3059u308b */
+body > div:last-child[style*="position: fixed"],
+body > div:last-child[style*="position:fixed"],
+body > div:last-of-type[style*="position: fixed"],
+body > div:last-of-type[style*="position:fixed"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* iframeu3092u975eu8868u793a */
+iframe {
+  display: none !important;
+}
+
+/* u30c7u30d0u30c3u30b0u30e1u30cbu30e5u30fcu3092u975eu8868u793a */
+#turbopack-dev-menu-root,
+#webpack-dev-menu-root,
+[id*="dev-menu"],
+[id*="dev-overlay"],
+[class*="dev-menu"],
+[class*="dev-overlay"] {
+  display: none !important;
+}

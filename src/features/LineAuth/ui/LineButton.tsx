@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 interface LineButtonProps {
   onClick?: () => void;
@@ -43,10 +44,12 @@ export function LineButton({
           </svg>
         </span>
       ) : (
-        <img 
+        <Image 
           src="/common/LINE_APP.png" 
           alt="LINE" 
-          className="w-10 h-10 mr-3" 
+          width={40} 
+          height={40} 
+          className="object-contain" 
         />
       )}
       <span className="text-base flex items-center">
