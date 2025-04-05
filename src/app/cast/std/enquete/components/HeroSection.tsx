@@ -55,9 +55,11 @@ export function HeroSection() {
               </span>
 
               <span
-                className="text-7xl font-black text-red-500 leading-none"
+                className="text-7xl font-black text-red-500 leading-none flex items-end"
                 style={{
                   textShadow: '2px 2px 6px rgba(0, 0, 0, 0.6)',
+                  position: 'relative',
+                  bottom: '-3px'
                 }}
               >
                 3
