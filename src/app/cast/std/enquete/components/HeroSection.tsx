@@ -59,7 +59,7 @@ export function HeroSection() {
                 style={{
                   textShadow: '2px 2px 6px rgba(0, 0, 0, 0.6)',
                   position: 'relative',
-                  bottom: '-3px'
+                  bottom: '-6px'
                 }}
               >
                 3
