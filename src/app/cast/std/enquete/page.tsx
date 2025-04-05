@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { HeroSection } from './components/HeroSection';
+import { Attractions } from './components/Attractions';
 import { ClientFooter } from '@/components/common';
 import { LineLoginButton } from '@/features/LineAuth';
 
@@ -10,6 +11,7 @@ export default function EnquetePage() {
     <div className="min-h-screen flex flex-col bg-white relative">
       <main className="flex-grow flex flex-col items-center">
         <HeroSection />
+        <Attractions />
       </main>
       
       <ClientFooter className="mb-16" /> {/* フッターの下にマージンを追加 */}

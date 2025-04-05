@@ -19,11 +19,11 @@ export function HeroSection() {
 
       {/* コンテンツ */}
       <div className="container mx-auto px-4 z-10 relative">
-        <div className="w-full max-w-xs text-left space-y-[24px]">
+        {/* ✅ 全体を少し下げる */}
+        <div className="w-full max-w-xs text-left space-y-[24px] mt-[60px]">
 
-          {/* 1〜2行目だけまとめて少し詰める */}
+          {/* 1〜2行目 */}
           <div className="space-y-[8px]">
-            {/* 1行目 */}
             <h1
               className="text-4xl font-extrabold leading-tight tracking-tight break-words"
               style={{
@@ -42,7 +42,6 @@ export function HeroSection() {
               <span className="text-3xl" style={{ color: 'white' }}>で</span>
             </h1>
 
-            {/* 2行目 */}
             <div className="flex items-end flex-wrap gap-2">
               <span
                 className="text-3xl font-black"
@@ -96,6 +95,19 @@ export function HeroSection() {
               style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
             >
               高収入
+            </span>
+          </div>
+
+          {/* ✅ 余白を広げて追加バッジ */}
+          <div className="text-center mx-auto mt-[20px]">
+            <span
+              className="inline-block text-sm sm:text-base font-semibold text-white px-3 py-1 rounded-full bg-white/20 shadow-md backdrop-blur-sm"
+              style={{
+                textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)',
+              }}
+            >
+              <span className="text-white font-bold mr-1">全国OK！</span>
+              アプリでマッチング
             </span>
           </div>
 
