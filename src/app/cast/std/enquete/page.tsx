@@ -3,6 +3,10 @@
 import React from 'react';
 import { HeroSection } from './components/HeroSection';
 import { Attractions } from './components/Attractions';
+import { HowItWorks } from './components/HowItWorks';
+import { JobOverview } from './components/JobOverview';
+import { FAQ } from './components/FAQ';
+import { FinalMessage } from './components/FinalMessage';
 import { ClientFooter } from '@/components/common';
 import { LineLoginButton } from '@/features/LineAuth';
 
@@ -12,6 +16,10 @@ export default function EnquetePage() {
       <main className="flex-grow flex flex-col items-center">
         <HeroSection />
         <Attractions />
+        <HowItWorks />
+        <JobOverview />
+        <FAQ />
+        <FinalMessage />
       </main>
       
       <ClientFooter className="mb-16" /> {/* フッターの下にマージンを追加 */}
