@@ -47,7 +47,7 @@ export const HeroSection: React.FC = () => {
               className="w-[90px] h-auto rounded-xl shadow-md"
             />
             {/* 右下に重ねて表示する文字（改行付き） */}
-            <div className="absolute bottom-[-7px] right-1 bg-black bg-opacity-50 text-white text-[10px] px-2 py-1 rounded text-right leading-tight">
+            <div className="absolute bottom-[-7px] right-0 bg-black bg-opacity-50 text-white text-[10px] px-2 py-1 rounded text-right leading-tight">
               全国OK!<br />
               アプリでマッチング
             </div>
