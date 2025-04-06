@@ -20,21 +20,33 @@ export const HeroSection: React.FC = () => {
       />
 
       <div className="max-w-6xl mx-auto relative z-20">
-        {/* キャッチコピー（中央揃え＋大きく） */}
+        {/* キャッチコピー（中央） */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-center">
           スキマ時間で月収2倍
         </h1>
 
-        {/* ラベル一覧（左半分に4×2で表示） */}
-        <div className="w-[180px] grid grid-cols-4 gap-2">
-          {tags.map((tag, idx) => (
-            <div
-              key={idx}
-              className="w-10 h-10 rounded-full bg-white bg-opacity-20 text-white text-[9px] font-medium flex items-center justify-center border border-white"
-            >
-              {tag}
-            </div>
-          ))}
+        {/* ラベル＋画像 横並び */}
+        <div className="flex flex-row items-start justify-start gap-4">
+          {/* 左：ラベル（さらに少しサイズアップ） */}
+          <div className="w-[240px] grid grid-cols-4 gap-2 shrink-0">
+            {tags.map((tag, idx) => (
+              <div
+                key={idx}
+                className="w-14 h-14 rounded-full bg-white bg-opacity-20 text-white text-xs font-medium flex items-center justify-center border border-white"
+              >
+                {tag}
+              </div>
+            ))}
+          </div>
+
+          {/* 右：画像（サイズそのまま） */}
+          <div className="w-[70px] shrink-0">
+            <img
+              src="/cast/std/japan.png"
+              alt="Japan"
+              className="w-full h-auto rounded-xl shadow-md"
+            />
+          </div>
         </div>
       </div>
     </section>
