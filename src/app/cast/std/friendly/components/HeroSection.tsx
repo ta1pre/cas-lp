@@ -1,4 +1,4 @@
-// /components/HeroSection.tsx
+// src/app/cast/std/friendly/components/HeroSection.tsx
 
 import React from 'react';
 
@@ -39,13 +39,17 @@ export const HeroSection: React.FC = () => {
             ))}
           </div>
 
-          {/* 右：画像（上下中央） */}
-          <div className="flex-1 flex justify-center items-center">
+          {/* 右：画像（上下中央）＋右下に文字 */}
+          <div className="flex-1 flex justify-center items-center relative">
             <img
               src="/cast/std/japan.png"
               alt="Japan"
               className="w-[90px] h-auto rounded-xl shadow-md"
             />
+            {/* 右下に重ねて表示する文字 */}
+            <div className="absolute bottom-1 right-1 bg-black bg-opacity-50 text-white text-[10px] px-2 py-1 rounded">
+              全国OK!
+            </div>
           </div>
         </div>
       </div>
