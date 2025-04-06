@@ -1,16 +1,41 @@
+// /components/HeroSection.tsx
+
 import React from 'react';
 
 export const HeroSection: React.FC = () => {
+  const tags = ['食事', 'カフェ', 'カラオケ', 'ダーツ', '映画', '美術館', 'ゴルフ', 'etc'];
+
   return (
-    <section className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-20 px-4">
-      <div className="max-w-6xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">食べて、飲んで、稼いで！</h1>
-        <p className="text-xl md:text-2xl mb-8">
-          glassのギャラ飲みで素敵な時間と報酬を手に入れよう
-        </p>
-        <button className="bg-white text-purple-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition duration-300">
-          今すぐ登録する
-        </button>
+    <section className="w-full relative text-white py-16 px-4 overflow-hidden">
+      {/* 背景画像 */}
+      <div 
+        className="absolute inset-0 z-0" 
+        style={{
+          backgroundImage: "url('/cast/std/shoping.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          filter: 'brightness(0.4)',
+        }}
+      />
+
+      <div className="max-w-6xl mx-auto relative z-20">
+        {/* キャッチコピー（中央揃え＋大きく） */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-center">
+          スキマ時間で月収2倍
+        </h1>
+
+        {/* ラベル一覧（左半分に4×2で表示） */}
+        <div className="w-[180px] grid grid-cols-4 gap-2">
+          {tags.map((tag, idx) => (
+            <div
+              key={idx}
+              className="w-10 h-10 rounded-full bg-white bg-opacity-20 text-white text-[9px] font-medium flex items-center justify-center border border-white"
+            >
+              {tag}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
