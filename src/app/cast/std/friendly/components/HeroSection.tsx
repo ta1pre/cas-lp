@@ -25,9 +25,9 @@ export const HeroSection: React.FC = () => {
           スキマ時間で月収2倍
         </h1>
 
-        {/* ラベル＋画像 横並び */}
-        <div className="flex flex-row items-start justify-start gap-4">
-          {/* 左：ラベル（さらに少しサイズアップ） */}
+        {/* ラベル＋画像 横並び（画像を上下中央に） */}
+        <div className="flex flex-row items-center gap-4">
+          {/* 左：ラベル */}
           <div className="w-[240px] grid grid-cols-4 gap-2 shrink-0">
             {tags.map((tag, idx) => (
               <div
@@ -39,12 +39,12 @@ export const HeroSection: React.FC = () => {
             ))}
           </div>
 
-          {/* 右：画像（サイズそのまま） */}
-          <div className="w-[70px] shrink-0">
+          {/* 右：画像（上下中央） */}
+          <div className="flex-1 flex justify-center items-center">
             <img
               src="/cast/std/japan.png"
               alt="Japan"
-              className="w-full h-auto rounded-xl shadow-md"
+              className="w-[90px] h-auto rounded-xl shadow-md"
             />
           </div>
         </div>
