@@ -11,7 +11,7 @@ export function FinalMessage() {
             スキマ時間をもっと自由に
           </h2>
           <p className="text-lg font-medium text-gray-800 tracking-tight">
-            自分らしい毎日を、<span className="text-pink-600 font-bold">cas</span>で。
+            自分らしい毎日を、<span className="text-pink-600 font-bold">Cas</span>で。
           </p>
         </div>
       </div>
