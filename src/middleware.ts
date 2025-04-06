@@ -5,7 +5,7 @@
 
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import { setCookieValue, hasCookie } from './middleware/utils/cookie';
+import { setCookieValue } from './middleware/utils/cookie';
 import { getValueFromPath } from './middleware/utils/path';
 
 /**
