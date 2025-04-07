@@ -47,14 +47,16 @@ export const RewardSystem: React.FC = () => {
         transition={{ duration: 1 }}
       />
       <div className="max-w-2xl mx-auto relative z-10">
-        <motion.h2 
-          className="text-xl sm:text-2xl font-bold mb-6 text-center drop-shadow-[1px_1px_1px_rgba(0,0,0,0.4)]"
-          initial={{ y: -20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          こんな悩み、ありませんか？
-        </motion.h2>
+        <div className="flex justify-center mb-6">
+          <motion.h2 
+            className="relative inline-block text-xl sm:text-2xl font-bold text-white text-center drop-shadow-[1px_1px_1px_rgba(0,0,0,0.4)] after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-full after:h-[1.5px] after:bg-white/60 after:rounded-full"
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            こんな悩み、ありませんか？
+          </motion.h2>
+        </div>
         <motion.ul 
           className="list-none space-y-3 text-sm sm:text-base text-gray-900"
           variants={containerVariants}
@@ -64,9 +66,9 @@ export const RewardSystem: React.FC = () => {
           {[
             "もっとお金が欲しい",
             "時間に縛られたくない",
-            "おしゃれも我慢してる",
+            "おしゃれしたい",
             "副業したいけど何をすれば…",
-            "人と話すのは好き",
+            "旅行に行きたい！",
           ].map((text, idx) => (
             <motion.li
               key={idx}
