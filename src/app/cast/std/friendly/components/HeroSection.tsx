@@ -26,18 +26,20 @@ export const HeroSection: React.FC = () => {
       <div className="max-w-6xl mx-auto relative z-20">
         {/* キャッチコピー（中央） */}
         <div className="mb-6 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-            <span className="block">
-              スキマ時間<span className="text-2xl align-baseline">で</span>月収<span className="text-yellow-300 font-bold">2倍</span>
-            </span>
-            <span className="block text-white text-2xl sm:text-3xl font-semibold mt-4">1アポ 
-              <span className="text-pink-400 font-bold inline-block">
-  <span className="text-4xl sm:text-6xl">3</span>万円超!
-</span>{' '}
-              可能
-            </span>
-          </h1>
-        </div>
+    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)]">
+      <span className="block">
+        スキマ時間<span className="text-2xl align-baseline">で</span>月収
+        <span className="text-yellow-300 font-bold"><span className="text-5xl sm:text-7xl">2</span>倍</span>
+      </span>
+      <span className="block text-white text-2xl sm:text-3xl font-semibold mt-4">
+        1アポ 
+        <span className="text-pink-400 font-bold inline-block">
+          <span className="text-4xl sm:text-6xl">3</span>万円超!
+        </span>{' '}
+        可能
+      </span>
+    </h1>
+  </div>
 
         {/* ラベル＋画像 横並び（画像を上下中央に） */}
         <div className="flex flex-row items-center gap-4">
@@ -68,14 +70,11 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
       </div>
-      <p className="mt-6 text-sm sm:text-base text-white text-left opacity-90 leading-relaxed max-w-xs sm:max-w-md mx-auto">
-        「cas（キャス）」は、スキマ時間に“しっかり稼げる”副業アプリ。面接なし、アプリで登録完了!<br />
-        すぐスタートできます。
-
-
-
-      </p>
-
+      <p className="mt-6 text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-md mx-auto font-semibold text-white drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)] text-left">
+  「cas（キャス）」は、スキマ時間に“しっかり稼げる”副業アプリ。
+  面接なし、アプリで登録完了!<br />
+  すぐスタートできます。
+</p>
     </section>
   );
 };
