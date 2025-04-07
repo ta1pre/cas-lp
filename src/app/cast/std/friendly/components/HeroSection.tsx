@@ -69,7 +69,11 @@ export const HeroSection: React.FC = () => {
         </div>
       </div>
       <p className="mt-6 text-sm sm:text-base text-white text-left opacity-90 leading-relaxed max-w-xs sm:max-w-md mx-auto">
-        「cas（キャス）」は、スキマ時間に“出会って稼げる”副業アプリ。食事やカフェなど軽い予定で、1アポ最大3万円も。
+        「cas（キャス）」は、スキマ時間に“しっかり稼げる”副業アプリ。面接なし、アプリで登録完了!<br />
+        すぐスタートできます。
+
+
+
       </p>
 
     </section>
