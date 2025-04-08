@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  /* スクロールバーを非表示にするクラス */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
 /* Next.jsu306eu30edu30b4u3068u958bu767au30e1u30cbu30e5u30fcu3092u5b8cu5168u306bu975eu8868u793au306bu3059u308b */
 #__next-build-watcher,
 #__next-route-announcer,
@@ -69,12 +80,12 @@ body > div:last-of-type[style*="position:fixed"] {
   pointer-events: none !important;
 }
 
-/* iframeu3092u975eu8868u793a */
+/* iframeu3092u975eu8868u793au306bu3059u308b */
 iframe {
   display: none !important;
 }
 
-/* u30c7u30d0u30c3u30b0u30e1u30cbu30e5u30fcu3092u975eu8868u793a */
+/* u30c7u30d0u30c3u30b0u30e1u30cbu30e5u30fcu3092u975eu8868u793au306bu3059u308b */
 #turbopack-dev-menu-root,
 #webpack-dev-menu-root,
 [id*="dev-menu"],

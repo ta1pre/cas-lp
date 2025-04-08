@@ -8,7 +8,7 @@ const cases = [
     label: '気軽にお試しで',
     name: 'N.Kさん 大学生 21歳',
     income: '¥4,200×16h=¥67,200',
-    color: 'pink',
+    color: 'amber',
     details: '週2回×1回2時間程度',
     voice:
       '登録も簡単で、すぐに始められました。自分のペースで選べるのが嬉しいです。大学の授業と両立しながら、空いた時間で気軽に稼げています！',
@@ -28,7 +28,7 @@ const cases = [
     label: '夢に向かって',
     name: 'H.Uさん 女優見習い 22歳',
     income: '¥8,000×108h=¥864,000',
-    color: 'purple',
+    color: 'green',
     details: '週5回×1回2時間程度 + 各種オプション',
     voice:
       '朝でも夜でも、地方にいても参加できるのでとてもありがたいです。時間が読めない仕事なので、オーディションやレッスンの空いたタイミングで自由にお仕事ができるのが本当に助かっています！',
@@ -49,7 +49,7 @@ const cases = [
 export const ModelCasesSection: React.FC = () => {
   return (
     <section className="w-full py-16 px-4 bg-rose-100">
-      <div className="max-w-full overflow-x-auto">
+      <div className="max-w-full">
         <div className="text-center mb-8">
           <motion.h2
             className="relative inline-block text-xl sm:text-2xl font-bold text-gray-800 text-center drop-shadow-sm after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-full after:h-[1.5px] after:bg-pink-300 after:rounded-full"
@@ -57,22 +57,34 @@ export const ModelCasesSection: React.FC = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            活躍中のモデルケース
+            稼ぎ方は自由！
           </motion.h2>
         </div>
 
-        <div className="flex space-x-4 px-1 sm:px-4 snap-x snap-mandatory overflow-x-auto">
+        <div className="flex space-x-4 px-1 sm:px-4 snap-x snap-mandatory overflow-x-auto overflow-y-hidden pb-4 no-scrollbar">
           {cases.map((item, idx) => (
             <motion.div
               key={idx}
-              className="snap-center bg-gray-50 min-w-[280px] max-w-[320px] shrink-0 rounded-xl shadow-sm relative overflow-hidden p-5"
+              className="snap-center bg-gray-50 min-w-[280px] max-w-[320px] shrink-0 rounded-xl shadow-sm relative p-5 h-auto flex flex-col"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.2 }}
               viewport={{ once: true }}
             >
               <div
-                className={`bg-${item.color}-100 text-${item.color}-600 font-bold py-1 px-3 absolute top-0 left-0 rounded-br-xl text-sm`}
+                className={
+  item.color === 'amber'
+    ? 'bg-amber-100 text-amber-600 font-bold py-1 px-3 absolute top-0 left-0 rounded-br-xl text-sm'
+    : item.color === 'pink'
+    ? 'bg-pink-100 text-pink-600 font-bold py-1 px-3 absolute top-0 left-0 rounded-br-xl text-sm'
+    : item.color === 'purple'
+    ? 'bg-purple-100 text-purple-600 font-bold py-1 px-3 absolute top-0 left-0 rounded-br-xl text-sm'
+    : item.color === 'green'
+    ? 'bg-green-100 text-green-600 font-bold py-1 px-3 absolute top-0 left-0 rounded-br-xl text-sm'
+    : item.color === 'red'
+    ? 'bg-red-100 text-red-600 font-bold py-1 px-3 absolute top-0 left-0 rounded-br-xl text-sm'
+    : 'bg-gray-100 text-gray-600 font-bold py-1 px-3 absolute top-0 left-0 rounded-br-xl text-sm'
+}
               >
                 {item.label}
               </div>
@@ -87,7 +99,19 @@ export const ModelCasesSection: React.FC = () => {
                 </div>
                 <div className="border-t border-gray-200 my-3 pt-3">
                   <p className="text-sm font-semibold text-gray-600">平均月収</p>
-                  <p className={`text-xl font-bold text-${item.color}-600 mb-1`}>{item.income}</p>
+                  <p className={
+  item.color === 'amber'
+    ? 'text-xl font-bold text-amber-600 mb-1'
+    : item.color === 'pink'
+    ? 'text-xl font-bold text-pink-600 mb-1'
+    : item.color === 'purple'
+    ? 'text-xl font-bold text-purple-600 mb-1'
+    : item.color === 'green'
+    ? 'text-xl font-bold text-green-600 mb-1'
+    : item.color === 'red'
+    ? 'text-xl font-bold text-red-600 mb-1'
+    : 'text-xl font-bold text-gray-600 mb-1'
+}>{item.income}</p>
                   <p className="text-sm text-gray-500">{item.details}</p>
                 </div>
                 <div className="mt-4 bg-white border-l-4 border-gray-200 pl-4 py-2 italic text-gray-600 text-sm">

@@ -7,6 +7,7 @@ import { AppealsSection } from './components/AppealsSection';
 import { ModelCasesSection } from './components/EarningMethods';
 import { HowItWorks } from './components/HowItWorks';
 import { Registration } from './components/Registration';
+import { MoneyFlowChartSection } from './components/MoneyFlowChartSection';
 import { ClientFooter } from '@/components/common';
 import { LineLoginButton } from '@/features/LineAuth';
 
@@ -19,6 +20,7 @@ export default function FriendlyPage() {
         <AppealsSection />
         <HowItWorks />
         <ModelCasesSection />
+        <MoneyFlowChartSection />
         <Registration />
       </main>
       
