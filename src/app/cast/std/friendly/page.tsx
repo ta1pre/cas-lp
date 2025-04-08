@@ -6,9 +6,9 @@ import { RewardSystem } from './components/RewardSystem';
 import { AppealsSection } from './components/AppealsSection';
 import { ModelCasesSection } from './components/EarningMethods';
 import { HowItWorks } from './components/HowItWorks';
-import { Registration } from './components/Registration';
 import { MoneyFlowChartSection } from './components/MoneyFlowChartSection';
 import { FaqSection } from './components/FaqSection';
+import { RegistrationSection } from './components/Registration';
 import { ClientFooter } from '@/components/common';
 import { LineLoginButton } from '@/features/LineAuth';
 
@@ -23,7 +23,7 @@ export default function FriendlyPage() {
         <ModelCasesSection />
         <MoneyFlowChartSection />
         <FaqSection />
-        <Registration />
+        <RegistrationSection />
       </main>
       
       <ClientFooter className="mb-16" />
