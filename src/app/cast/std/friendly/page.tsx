@@ -18,9 +18,9 @@ export default function FriendlyPage() {
         <HeroSection />
         <RewardSystem />
         <AppealsSection />
+        <HowItWorks />
         <ThreeReasons />
         <EarningMethods />
-        <HowItWorks />
         <Registration />
       </main>
       
