@@ -4,8 +4,7 @@ import React from 'react';
 import { HeroSection } from './components/HeroSection';
 import { RewardSystem } from './components/RewardSystem';
 import { AppealsSection } from './components/AppealsSection';
-import { ThreeReasons } from './components/ThreeReasons';
-import { EarningMethods } from './components/EarningMethods';
+import { ModelCasesSection } from './components/EarningMethods';
 import { HowItWorks } from './components/HowItWorks';
 import { Registration } from './components/Registration';
 import { ClientFooter } from '@/components/common';
@@ -19,8 +18,7 @@ export default function FriendlyPage() {
         <RewardSystem />
         <AppealsSection />
         <HowItWorks />
-        <ThreeReasons />
-        <EarningMethods />
+        <ModelCasesSection />
         <Registration />
       </main>
       

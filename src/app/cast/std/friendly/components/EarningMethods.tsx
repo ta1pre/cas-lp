@@ -1,83 +1,101 @@
-import React from 'react';
+// src/app/cast/std/friendly/components/ModelCasesSection.tsx
 
-export const EarningMethods: React.FC = () => {
+import React from 'react';
+import { motion } from 'framer-motion';
+
+const cases = [
+  {
+    label: '気軽にお試しで',
+    name: 'N.Kさん 大学生 21歳',
+    income: '¥4,200×16h=¥67,200',
+    color: 'pink',
+    details: '週2回×1回2時間程度',
+    voice:
+      '登録も簡単で、すぐに始められました。自分のペースで選べるのが嬉しいです。大学の授業と両立しながら、空いた時間で気軽に稼げています！',
+    icon: '/cast/std/fe_1.png'
+  },
+  {
+    label: 'バイトで収入が倍に！',
+    name: 'S.Kさん 保育士 26歳',
+    income: '¥6,500×36h=¥234,000',
+    color: 'purple',
+    details: '週3回×1回2時間程度',
+    voice:
+      '平日は仕事があるので、週末を中心に活動しています。お茶やランチだけでも気軽に参加できて、収入も生活に余裕が出るくらいになりました！',
+    icon: '/cast/std/fe_2.png'
+  },
+  {
+    label: '夢に向かって',
+    name: 'H.Uさん 女優見習い 22歳',
+    income: '¥8,000×108h=¥864,000',
+    color: 'purple',
+    details: '週5回×1回2時間程度 + 各種オプション',
+    voice:
+      '朝でも夜でも、地方にいても参加できるのでとてもありがたいです。時間が読めない仕事なので、オーディションやレッスンの空いたタイミングで自由にお仕事ができるのが本当に助かっています！',
+    icon: '/cast/std/fe_3.png'
+  },
+  {
+    label: '憧れを形に',
+    name: 'S.Kさん 22歳',
+    income: '¥18,000×120h=¥2,160,000',
+    color: 'red',
+    details: '週4回×1回2時間程度',
+    voice:
+      'お仕事の幅も出会う人の層もすごく広がって、毎回が刺激的です。自分のことを大切にしながら、新しいチャンスにもつながる場だと感じています。',
+    icon: '/cast/std/fe_4.png'
+  },
+];
+
+export const ModelCasesSection: React.FC = () => {
   return (
-    <section className="w-full py-16 px-4 bg-white">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">glassでのキャストの稼ぎ方</h2>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* トライアル */}
-          <div className="bg-gray-50 p-6 rounded-xl shadow-sm relative overflow-hidden">
-            <div className="bg-pink-100 text-pink-600 font-bold py-2 px-4 absolute top-0 right-0 rounded-bl-xl">
-              トライアル
-            </div>
-            <div className="pt-10">
-              <h3 className="text-xl font-bold mb-2">N.Kさん 大学生 21歳</h3>
-              <div className="border-t border-gray-200 my-4 pt-4">
-                <p className="text-lg font-semibold">glassの平均月収</p>
-                <p className="text-2xl font-bold text-pink-600 mb-2">¥3,200×16h=¥51,200</p>
-                <p className="text-gray-600">グループコール 週2回×1回2時間</p>
+    <section className="w-full py-16 px-4 bg-rose-100">
+      <div className="max-w-full overflow-x-auto">
+        <div className="text-center mb-8">
+          <motion.h2
+            className="relative inline-block text-xl sm:text-2xl font-bold text-gray-800 text-center drop-shadow-sm after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-full after:h-[1.5px] after:bg-pink-300 after:rounded-full"
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            活躍中のモデルケース
+          </motion.h2>
+        </div>
+
+        <div className="flex space-x-4 px-1 sm:px-4 snap-x snap-mandatory overflow-x-auto">
+          {cases.map((item, idx) => (
+            <motion.div
+              key={idx}
+              className="snap-center bg-gray-50 min-w-[280px] max-w-[320px] shrink-0 rounded-xl shadow-sm relative overflow-hidden p-5"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: idx * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div
+                className={`bg-${item.color}-100 text-${item.color}-600 font-bold py-1 px-3 absolute top-0 left-0 rounded-br-xl text-sm`}
+              >
+                {item.label}
               </div>
-              <div className="mt-6 bg-white p-4 rounded-lg italic text-gray-600">
-                最初は少し抵抗がありましたが、自分の行きたい条件のものにだけ参加すればよいので無理なく参加できます。隙間時間で稼げるのでもっと早くこのサービスに出会いたかったです!
+              <div className="pt-8">
+                <div className="flex items-center gap-3 mb-2">
+                  <img
+                    src={item.icon}
+                    alt={item.name}
+                    className="w-10 h-10 rounded-full object-cover border border-gray-300"
+                  />
+                  <h3 className="text-base font-bold">{item.name}</h3>
+                </div>
+                <div className="border-t border-gray-200 my-3 pt-3">
+                  <p className="text-sm font-semibold text-gray-600">平均月収</p>
+                  <p className={`text-xl font-bold text-${item.color}-600 mb-1`}>{item.income}</p>
+                  <p className="text-sm text-gray-500">{item.details}</p>
+                </div>
+                <div className="mt-4 bg-white border-l-4 border-gray-200 pl-4 py-2 italic text-gray-600 text-sm">
+                  {item.voice}
+                </div>
               </div>
-            </div>
-          </div>
-          
-          {/* スタンダード */}
-          <div className="bg-gray-50 p-6 rounded-xl shadow-sm relative overflow-hidden">
-            <div className="bg-purple-100 text-purple-600 font-bold py-2 px-4 absolute top-0 right-0 rounded-bl-xl">
-              スタンダード
-            </div>
-            <div className="pt-10">
-              <h3 className="text-xl font-bold mb-2">S.Kさん 保育士 26歳</h3>
-              <div className="border-t border-gray-200 my-4 pt-4">
-                <p className="text-lg font-semibold">glassの平均月収</p>
-                <p className="text-2xl font-bold text-purple-600 mb-2">¥6,500×24h=¥156,000</p>
-                <p className="text-gray-600">ソロコール週3回 × 1回2時間</p>
-              </div>
-              <div className="mt-6 bg-white p-4 rounded-lg italic text-gray-600">
-                夜が出れないのでソロコールでお茶やお食事での利用することが多いです！普段聞けないようなお話ができてすっごく楽しいです！
-              </div>
-            </div>
-          </div>
-          
-          {/* スタンダード 2 */}
-          <div className="bg-gray-50 p-6 rounded-xl shadow-sm relative overflow-hidden">
-            <div className="bg-purple-100 text-purple-600 font-bold py-2 px-4 absolute top-0 right-0 rounded-bl-xl">
-              スタンダード
-            </div>
-            <div className="pt-10">
-              <h3 className="text-xl font-bold mb-2">H.Uさん モデル 22歳</h3>
-              <div className="border-t border-gray-200 my-4 pt-4">
-                <p className="text-lg font-semibold">glassの平均月収</p>
-                <p className="text-2xl font-bold text-purple-600 mb-2">¥4,400×100h +¥3,000×10回=¥476,000</p>
-                <p className="text-gray-600">週5回ｘ1回2時間 + 深夜手数料</p>
-              </div>
-              <div className="mt-6 bg-white p-4 rounded-lg italic text-gray-600">
-                24時間運営の方が対応してくれるので安心して利用しています。いつお仕事が入るか分からない職業の私でも参加しやすく、助かっていますっ!!
-              </div>
-            </div>
-          </div>
-          
-          {/* VIP */}
-          <div className="bg-gray-50 p-6 rounded-xl shadow-sm relative overflow-hidden">
-            <div className="bg-red-100 text-red-600 font-bold py-2 px-4 absolute top-0 right-0 rounded-bl-xl">
-              VIP
-            </div>
-            <div className="pt-10">
-              <h3 className="text-xl font-bold mb-2">S.Kさん 芸能人 26歳</h3>
-              <div className="border-t border-gray-200 my-4 pt-4">
-                <p className="text-lg font-semibold">glassの平均月収</p>
-                <p className="text-2xl font-bold text-red-600 mb-2">¥7,600×60h +¥12,000×30h=¥816,000</p>
-                <p className="text-gray-600">グループ週3回＋ソロ週2回</p>
-              </div>
-              <div className="mt-6 bg-white p-4 rounded-lg italic text-gray-600">
-                身バレできないのでソロコールメインでたまにグループコールの方にも参加しています。経営者の方や業界関係者の方もたくさんいらっしゃるので色んな話が聞けてすっごく楽しいです！
-              </div>
-            </div>
-          </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
