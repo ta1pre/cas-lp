@@ -8,6 +8,7 @@ import { ModelCasesSection } from './components/EarningMethods';
 import { HowItWorks } from './components/HowItWorks';
 import { Registration } from './components/Registration';
 import { MoneyFlowChartSection } from './components/MoneyFlowChartSection';
+import { FaqSection } from './components/FaqSection';
 import { ClientFooter } from '@/components/common';
 import { LineLoginButton } from '@/features/LineAuth';
 
@@ -21,6 +22,7 @@ export default function FriendlyPage() {
         <HowItWorks />
         <ModelCasesSection />
         <MoneyFlowChartSection />
+        <FaqSection />
         <Registration />
       </main>
       

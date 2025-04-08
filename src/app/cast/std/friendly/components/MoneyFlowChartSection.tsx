@@ -1,12 +1,13 @@
 // src/app/cast/std/friendly/components/MoneyFlowChartSection.tsx
 import React from 'react';
+import Image from 'next/image';
 
 export const MoneyFlowChartSection: React.FC = () => {
   return (
-    <section className="w-full py-16 px-4 bg-white">
+    <section className="w-full py-16 pb-8 px-4 bg-white">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="relative inline-block text-xl sm:text-2xl font-bold text-gray-800 drop-shadow-sm mb-12 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-full after:h-[1.5px] after:bg-yellow-300 after:rounded-full">
-          お金のやりとりはすべてアプリ内で
+          やりとりはすべてアプリ内で
         </h2>
 
         {/* フローチャート */}
@@ -14,7 +15,7 @@ export const MoneyFlowChartSection: React.FC = () => {
           {/* キャストとユーザーの配置 */}
           <div className="flex justify-between items-center">
             <div className="text-center">
-              <div className="bg-pink-100 text-pink-600 font-bold py-3 px-6 rounded-full mb-2 shadow-sm">
+              <div className="bg-pink-100 text-pink-600 font-bold py-3 px-6 rounded-full mb-2 shadow-md">
                 キャスト
               </div>
               <p className="text-sm text-gray-600">報酬として受け取り</p>
@@ -50,7 +51,7 @@ export const MoneyFlowChartSection: React.FC = () => {
             </div>
             
             <div className="text-center">
-              <div className="bg-blue-100 text-blue-700 font-bold py-3 px-6 rounded-full mb-2 shadow-sm">
+              <div className="bg-blue-100 text-blue-700 font-bold py-3 px-6 rounded-full mb-2 shadow-md">
                 ユーザー
               </div>
               <p className="text-sm text-gray-600">ポイントで支払い</p>
@@ -58,9 +59,15 @@ export const MoneyFlowChartSection: React.FC = () => {
           </div>
           
           {/* 中央：cas */}
-          <div className="absolute top-[85px] left-1/2 -translate-x-1/2">
-            <div className="bg-black text-white font-bold py-3 px-8 rounded-full shadow-md">
-              cas
+          <div className="absolute top-[95px] left-1/2 -translate-x-1/2">
+            <div className="bg-white flex items-center justify-center py-2 px-4 rounded-full shadow-md">
+              <Image
+                src="/common/logo.png"
+                alt="casロゴ"
+                width={30}
+                height={30}
+                className="object-contain"
+              />
             </div>
           </div>
           
@@ -136,8 +143,8 @@ export const MoneyFlowChartSection: React.FC = () => {
         {/* 補足テキスト */}
         <div className="bg-gray-50 p-4 rounded-lg shadow-sm max-w-md mt-0 text-left">
           <p className="text-sm text-gray-600 leading-relaxed">
-            やり取りはすべてアプリ内で完結。<br />
-            現金の受け渡しがないから、金銭トラブルの心配もありません。
+          直接のメッセージや現金のやり取りは一切ナシ。<br />
+          予約から支払いまですべてアプリで完結するから、安心です。
           </p>
         </div>
       </div>
