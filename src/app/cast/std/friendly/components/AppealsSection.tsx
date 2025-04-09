@@ -59,7 +59,8 @@ export const AppealsSection: React.FC = () => {
                   className="w-full h-full object-contain filter-rose-500" 
                   style={{ 
                     filter: 'invert(41%) sepia(83%) saturate(7414%) hue-rotate(330deg) brightness(95%) contrast(96%)',
-                    transform: item.icon.includes('actor') || item.icon.includes('1manyen') ? 'scale(1.4)' : 'none'
+                    transform: item.icon.includes('actor') ? 'scale(1.1) translateY(0px)' : 
+                              item.icon.includes('1manyen') ? 'scale(1.4)' : 'none'
                   }} 
                 />
               </div>
