@@ -31,7 +31,7 @@ export const RewardSystem: React.FC = () => {
     <motion.section
       className="w-full py-12 px-4 text-white bg-cover bg-right bg-no-repeat relative"
       style={{
-        backgroundImage: "url('/cast/std/kusuriya.jpg')",
+        backgroundImage: "url('/cast/std/fuan.png')",
         backgroundSize: 'auto 100%',
         backgroundPosition: 'right',
         backgroundRepeat: 'no-repeat',
