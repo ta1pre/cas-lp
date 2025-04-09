@@ -15,7 +15,7 @@ export const HeroSection: React.FC = () => {
         animate={{ scale: 1.05 }}
         transition={{ duration: 10, repeat: Infinity, repeatType: 'reverse' }}
         style={{
-          backgroundImage: "url('/cast/std/shoping.png')",
+          backgroundImage: "url('/cast/std/kusuriya.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
