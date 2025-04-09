@@ -14,7 +14,6 @@ export const RegistrationSection: React.FC = () => {
       <div
         className="absolute top-0 right-0 h-full"
         style={{
-          backgroundImage: 'url(/cast/std/smile.png)',
           backgroundPosition: 'right center',
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',

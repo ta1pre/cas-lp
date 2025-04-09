@@ -11,6 +11,8 @@ import { FaqSection } from './components/FaqSection';
 import { RegistrationSection } from './components/Registration';
 import { ClientFooter } from '@/components/common';
 import { LineLoginButton } from '@/features/LineAuth';
+import { CTAModal } from './components/CTAModal';
+import { FixedCTAButton } from './components/FixedCTAButton';
 
 export default function FriendlyPage() {
   return (
@@ -28,15 +30,11 @@ export default function FriendlyPage() {
       
       <ClientFooter className="mb-16" />
       
-      {/* LINEログインボタン */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 w-full">
-        <div className="w-full bg-white pt-3 pb-3 border-t border-gray-200">
-          <p className="text-center text-red-600 font-bold mb-2">
-            ＼ もれなく1万円分のボーナスポイント進呈中！ ／
-          </p>
-          <LineLoginButton />
-        </div>
-      </div>
+      {/* スクロール検出後に表示されるCTAモーダル */}
+      <CTAModal delayInSeconds={1} scrollThreshold={80} />
+      
+      {/* 固定のCTAボタン */}
+      <FixedCTAButton />
     </div>
   );
 }
