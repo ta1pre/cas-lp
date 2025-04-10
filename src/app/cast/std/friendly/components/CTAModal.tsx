@@ -94,7 +94,7 @@ export function CTAModal({
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.3 }}
                 >
-                  ＼ もれなく1万円分のボーナスポイント進呈中！ ／
+                  ＼ もれなく1万円分のポイント進呈中！ ／
                 </motion.p>
                 
                 <motion.div 
@@ -103,10 +103,7 @@ export function CTAModal({
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.3 }}
                 >
-                  <p className="text-gray-700 mb-2">
-                    登録はたった3分で完了します。<br />
-                    今なら特別キャンペーン実施中！
-                  </p>
+
                 </motion.div>
 
                 <motion.div
