@@ -10,7 +10,6 @@ import { MoneyFlowChartSection } from './components/MoneyFlowChartSection';
 import { FaqSection } from './components/FaqSection';
 import { RegistrationSection } from './components/Registration';
 import { ClientFooter } from '@/components/common';
-import { LineLoginButton } from '@/features/LineAuth';
 import { CTAModal } from './components/CTAModal';
 import { FixedCTAButton } from './components/FixedCTAButton';
 
