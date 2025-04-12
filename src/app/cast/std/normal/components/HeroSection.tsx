@@ -15,7 +15,7 @@ export const HeroSection: React.FC = () => {
         animate={{ scale: 1.05 }}
         transition={{ duration: 10, repeat: Infinity, repeatType: 'reverse' }}
         style={{
-          backgroundImage: "url('/cast/std/s.jpg')",
+          backgroundImage: "url('/cast/std/bg/bg1.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -25,20 +25,23 @@ export const HeroSection: React.FC = () => {
 
       <div className="max-w-6xl mx-auto relative z-20">
         {/* キャッチコピー（中央） */}
-        <div className="mb-6 text-center">
-    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)]">
-      <span className="block">
-        スキマ時間<span className="text-2xl align-baseline">で</span>月収
-        <span className="text-yellow-300 font-bold"><span className="text-5xl sm:text-7xl">2</span>倍</span>
-      </span>
-      <span className="block text-white text-2xl sm:text-3xl font-semibold mt-4">
-        1アポ 
-        <span className="text-pink-400 font-bold inline-block">
-          <span className="text-4xl sm:text-6xl">3</span>万円超!
-        </span>{' '}
-        可能
-      </span>
-    </h1>
+        <div className="mb-6 text-left">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)]">
+  <span className="block">Casでわたしが</span>
+  <span className="block"></span>
+  <span className="block text-yellow-300 font-bold">
+    <span className="text-5xl sm:text-5xl">主役</span>に
+    <span className="block">なった</span>
+  </span>
+  <span className="block text-white text-2xl sm:text-3xl font-semibold mt-4 text-center">
+    1アポ 
+    <span className="text-pink-400 font-bold inline-block">
+      <span className="text-4xl sm:text-6xl">3</span>万円超!
+    </span>{' '}
+    可能
+  </span>
+</h1>
+
   </div>
 
         {/* ラベル＋画像 横並び（画像を上下中央に） */}
@@ -71,9 +74,9 @@ export const HeroSection: React.FC = () => {
         </div>
       </div>
       <p className="mt-6 text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-md mx-auto font-semibold text-white drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)] text-left">
-  「cas（キャス）」は、スキマ時間に“しっかり稼げる”副業アプリ。
-  面接なし、アプリで登録完了!<br />
-  すぐスタートできます。
+      Cas（キャス）は、スキマ時間に“稼げる”副業アプリ。
+アプリで登録完了！すぐスタート。
+誰かの特別な時間で、“ちょっとイイ感じの私”を楽しむお仕事です。
 </p>
     </section>
   );
