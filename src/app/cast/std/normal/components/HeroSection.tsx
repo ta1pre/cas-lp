@@ -26,21 +26,27 @@ export const HeroSection: React.FC = () => {
       <div className="max-w-6xl mx-auto relative z-20">
         {/* キャッチコピー（中央） */}
         <div className="mb-6 text-left">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)]">
-  <span className="block">Casでわたしが</span>
-  <span className="block"></span>
-  <span className="block text-yellow-300 font-bold">
-    <span className="text-5xl sm:text-5xl">主役</span>に
-    <span className="block">なった</span>
-  </span>
-  <span className="block text-white text-2xl sm:text-3xl font-semibold mt-4 text-center">
-    1アポ 
+        <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold leading-tight space-y-2 drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)]">
+  <div className="block">
+    Cas<span className="text-2xl align-baseline">で</span>
+    わたし<span className="text-2xl align-baseline">が</span>
+  </div>
+  <div className="block text-yellow-300 font-bold">
+    <span className="text-4xl sm:text-4xl">主役</span>
+    <span className="text-2xl align-baseline">に</span>
+  </div>
+  <div className="bloc font-bold">
+    <span className="text-4xl sm:text-4xl">なった。</span>
+  </div>
+  <div className="text-center block text-white text-2xl sm:text-3xl font-semibold mt-6">
+    <span className="text-3xl sm:text-3xl">1</span>アポ{' '}
     <span className="text-pink-400 font-bold inline-block">
-      <span className="text-4xl sm:text-6xl">3</span>万円超!
+      <span className="text-4xl sm:text-4xl">3</span>万円超!
     </span>{' '}
     可能
-  </span>
+  </div>
 </h1>
+
 
   </div>
 
