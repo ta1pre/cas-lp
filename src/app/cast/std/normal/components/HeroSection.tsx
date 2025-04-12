@@ -28,7 +28,7 @@ export const HeroSection: React.FC = () => {
         <div className="mb-6 text-left">
         <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold leading-tight space-y-2 drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)]">
   <div className="block">
-    Cas<span className="text-2xl align-baseline">では</span>
+    Cas<span className="text-2xl align-baseline">中は</span>
   </div>
   <div className="block">
     わたし<span className="text-2xl align-baseline">が</span>
