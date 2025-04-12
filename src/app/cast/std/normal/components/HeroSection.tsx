@@ -28,15 +28,17 @@ export const HeroSection: React.FC = () => {
         <div className="mb-6 text-left">
         <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold leading-tight space-y-2 drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)]">
   <div className="block">
-    Cas<span className="text-2xl align-baseline">で</span>
+    Cas<span className="text-2xl align-baseline">では</span>
+  </div>
+  <div className="block">
     わたし<span className="text-2xl align-baseline">が</span>
   </div>
   <div className="block text-yellow-300 font-bold">
     <span className="text-4xl sm:text-4xl">主役</span>
-    <span className="text-2xl align-baseline">に</span>
+    <span className="text-2xl align-baseline">で</span>
   </div>
   <div className="bloc font-bold">
-    <span className="text-4xl sm:text-4xl">なった。</span>
+    <span className="text-4xl sm:text-4xl">稼いでた。</span>
   </div>
   <div className="text-center block text-white text-2xl sm:text-3xl font-semibold mt-6">
     <span className="text-3xl sm:text-3xl">1</span>アポ{' '}
