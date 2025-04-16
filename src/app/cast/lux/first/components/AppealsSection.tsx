@@ -9,7 +9,7 @@ export const AppealsSection: React.FC = () => {
       icon: '/cast/std/hato.svg',
       title: 'ストレスフリーで働ける',
       description:
-        '面接・シフト・ノルマは一切なし。働き方も人付き合いも自由だから、気負わず続けられます。',
+        '面接・シフト・ノルマは一切なし。月1回のスキマ時間でも、がっつり稼ぐフルタイムも自分次第！もちろん身バレ対策も万全！',
     },
     {
       icon: '/cast/std/actor.svg',
@@ -21,7 +21,7 @@ export const AppealsSection: React.FC = () => {
       icon: '/cast/std/1manyen.svg',
       title: '報酬は自分で決められる',
       description:
-        '自分で単価を設定できるから、働く価値を自分でコントロール。納得のいく金額で活動できます。',
+        '自分で単価を設定できるから、働く価値を自分でコントロール。納得のいく収入で活動できます。謎の手数料で引かれることもありません。',
     },
   ];
 

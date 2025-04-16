@@ -31,11 +31,11 @@ export const HeroSection: React.FC = () => {
     PreCas<span className="text-2xl align-baseline">は</span>
   </div>
   <div className="block">
-    誰でも稼げる<span className="text-2xl align-baseline"></span>
+  時間・内容・収入<span className="text-2xl align-baseline"></span>
   </div>
   <div className="block text-yellow-300 font-bold">
-    <span className="text-4xl sm:text-4xl">風俗バイト</span>
-    <span className="text-2xl align-baseline">アプリ</span>
+    <span className="text-4xl sm:text-4xl">自由に決めれる</span>
+    <span className="text-2xl align-baseline">風俗アプリ</span>
   </div>
   <div className="bloc font-bold">
     <span className="text-4xl sm:text-4xl">未経験OK！</span>
@@ -82,8 +82,8 @@ export const HeroSection: React.FC = () => {
         </div>
       </div>
       <p className="mt-6 text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-md mx-auto font-semibold text-white drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)] text-left">
-      PreCas（プレキャス）は、いつでも“稼げる”風俗バイト。
-アプリで登録完了！すぐスタート。サービス内容も自分で決められるので、未経験でも安心です。
+      PreCas（プレキャス）は、面接も、出勤も、ノルマも、指名競争もナシ。  
+誰にも縛られずに稼げる「<span className="font-bold text-rose-500">全く新しい風俗アプリ</span>」を、今すぐ始めましょう。
 </p>
     </section>
   );
