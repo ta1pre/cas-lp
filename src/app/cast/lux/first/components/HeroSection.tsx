@@ -1,10 +1,10 @@
-// src/app/cast/std/friendly/components/HeroSection.tsx
+// src/app/cast/lux/first/components/HeroSection.tsx
 
 import React from 'react';
 import { motion } from 'framer-motion';
 
 export const HeroSection: React.FC = () => {
-  const tags = ['食事', 'カフェ', 'カラオケ', 'ダーツ', '映画', '美術館', 'ゴルフ', 'etc'];
+  const tags = ['未経験OK', '面接無し', 'シフト自由', 'ノルマ無し', '10万超/日', '脱がないOK'];
 
   return (
     <section className="w-full relative text-white py-16 px-4 overflow-hidden">
@@ -15,7 +15,7 @@ export const HeroSection: React.FC = () => {
         animate={{ scale: 1.05 }}
         transition={{ duration: 10, repeat: Infinity, repeatType: 'reverse' }}
         style={{
-          backgroundImage: "url('/cast/std/bg/bg1.jpg')",
+          backgroundImage: "url('/cast/std/wb.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -28,22 +28,22 @@ export const HeroSection: React.FC = () => {
         <div className="mb-6 text-left">
         <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold leading-tight space-y-2 drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)]">
   <div className="block">
-    Cas<span className="text-2xl align-baseline">では</span>
+    PreCas<span className="text-2xl align-baseline">は</span>
   </div>
   <div className="block">
-    わたし<span className="text-2xl align-baseline">が</span>
+    誰でも稼げる<span className="text-2xl align-baseline"></span>
   </div>
   <div className="block text-yellow-300 font-bold">
-    <span className="text-4xl sm:text-4xl">主役</span>
-    <span className="text-2xl align-baseline">で</span>
+    <span className="text-4xl sm:text-4xl">風俗バイト</span>
+    <span className="text-2xl align-baseline">アプリ</span>
   </div>
   <div className="bloc font-bold">
-    <span className="text-4xl sm:text-4xl">稼いでた。</span>
+    <span className="text-4xl sm:text-4xl">初心者OK！</span>
   </div>
   <div className="text-center block text-white text-2xl sm:text-3xl font-semibold mt-6">
-    <span className="text-3xl sm:text-3xl">1</span>アポ{' '}
+    <span className="text-4xl sm:text-4xl">1</span>日{' '}
     <span className="text-pink-400 font-bold inline-block">
-      <span className="text-4xl sm:text-4xl">3</span>万円超!
+      <span className="text-4xl sm:text-4xl">10</span>万円超!
     </span>{' '}
     可能
   </div>
@@ -55,11 +55,11 @@ export const HeroSection: React.FC = () => {
         {/* ラベル＋画像 横並び（画像を上下中央に） */}
         <div className="flex flex-row items-center gap-4">
           {/* 左：ラベル */}
-          <div className="w-[240px] grid grid-cols-4 gap-2 shrink-0">
+          <div className="w-[240px] grid grid-cols-3 gap-2 shrink-0">
             {tags.map((tag, idx) => (
               <div
                 key={idx}
-                className="w-14 h-14 rounded-full bg-white bg-opacity-20 text-white text-xs font-medium flex items-center justify-center border border-white"
+                className="w-20 h-20 rounded-full bg-white bg-opacity-20 text-white text-xs font-medium flex items-center justify-center border border-white"
               >
                 {tag}
               </div>
@@ -82,9 +82,8 @@ export const HeroSection: React.FC = () => {
         </div>
       </div>
       <p className="mt-6 text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-md mx-auto font-semibold text-white drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)] text-left">
-      Cas（キャス）は、スキマ時間に“稼げる”副業アプリ。
-アプリで登録完了！すぐスタート。
-誰かの特別な時間で、“ちょっとイイ感じの私”を楽しむお仕事です。
+      PreCas（プレキャス）は、いつでも“稼げる”風俗バイト。
+アプリで登録完了！すぐスタート。サービス内容も自分で決められるので、未経験でも安心です。
 </p>
     </section>
   );
