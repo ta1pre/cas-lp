@@ -38,7 +38,7 @@ export const HeroSection: React.FC = () => {
     <span className="text-2xl align-baseline">アプリ</span>
   </div>
   <div className="bloc font-bold">
-    <span className="text-4xl sm:text-4xl">初心者OK！</span>
+    <span className="text-4xl sm:text-4xl">未経験OK！</span>
   </div>
   <div className="text-center block text-white text-2xl sm:text-3xl font-semibold mt-6">
     <span className="text-4xl sm:text-4xl">1</span>日{' '}

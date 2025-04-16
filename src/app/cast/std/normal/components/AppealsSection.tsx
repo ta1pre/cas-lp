@@ -1,4 +1,4 @@
-// src/app/cast/std/friendly/components/AppealsSection.tsx
+// src/app/cast/std/normal/components/AppealsSection.tsx
 
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -36,7 +36,7 @@ export const AppealsSection: React.FC = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            casの魅力
+            casの特徴
           </motion.h2>
         </div>
 

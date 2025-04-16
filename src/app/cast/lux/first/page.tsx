@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { HeroSection } from './components/HeroSection';
-import { RewardSystem } from './components/RewardSystem';
+// import { RewardSystem } from './components/RewardSystem';
 import { AppealsSection } from './components/AppealsSection';
 import { ModelCasesSection } from './components/EarningMethods';
 import { HowItWorks } from './components/HowItWorks';
@@ -18,7 +18,7 @@ export default function FriendlyPage() {
     <div className="min-h-screen flex flex-col bg-white relative">
       <main className="flex-grow flex flex-col items-center">
         <HeroSection />
-        <RewardSystem />
+        {/* <RewardSystem /> */}
         <AppealsSection />
         <HowItWorks />
         <ModelCasesSection />
