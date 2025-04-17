@@ -35,7 +35,7 @@ const ComparisonSection = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            今までの風俗店とは違います！
+            今までの風俗店とはココが違う！
           </motion.h2>
         </div>
         {/* テーブル方式 比較表 */}
