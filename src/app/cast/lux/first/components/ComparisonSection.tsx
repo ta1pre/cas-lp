@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Circle } from "lucide-react";
 
 const comparisons = [
   { title: "エリア", other: "決まってる", precas: "全国どこでも" },
