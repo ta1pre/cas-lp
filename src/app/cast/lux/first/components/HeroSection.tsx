@@ -26,7 +26,7 @@ export const HeroSection: React.FC = () => {
       <div className="max-w-6xl mx-auto relative z-20">
         {/* キャッチコピー（中央） */}
         <div className="mb-6 text-left">
-        <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold leading-tight space-y-2 drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)]">
+        <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold leading-tight space-y-2 drop-shadow-md">
   <div className="block">
     PreCas<span className="text-2xl align-baseline">は</span>
   </div>
@@ -81,7 +81,7 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
       </div>
-      <p className="mt-6 text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-md mx-auto font-semibold text-white drop-shadow-[2px_2px_0px_rgba(0,0,0,0.8)] text-left">
+      <p className="mt-6 text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-md mx-auto font-semibold text-white drop-shadow-md text-left">
       PreCas（プレキャス）は、面接も、出勤も、ノルマも、指名競争もナシ。  
 誰にも縛られずに稼げる「<span className="font-bold text-rose-500">全く新しい風俗アプリ</span>」を、今すぐ始めましょう。
 </p>
