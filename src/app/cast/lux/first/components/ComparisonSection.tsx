@@ -44,7 +44,7 @@ const ComparisonSection = () => {
             <thead>
               <tr>
                 <th className="bg-white text-xs sm:text-sm font-semibold text-gray-500 text-left px-2 py-2 w-1/3 rounded-l-xl">項目</th>
-                <th className="bg-white text-xs sm:text-sm font-semibold text-gray-500 text-left px-2 py-2">他社</th>
+                <th className="bg-white text-xs sm:text-sm font-semibold text-gray-500 text-left px-2 py-2">他店</th>
                 <th className="bg-white text-xs sm:text-sm font-semibold text-gray-500 text-left px-2 py-2 rounded-r-xl">PreCas</th>
               </tr>
             </thead>
