@@ -4,6 +4,7 @@ import React from 'react';
 import { HeroSection } from './components/HeroSection';
 // import { RewardSystem } from './components/RewardSystem';
 import { AppealsSection } from './components/AppealsSection';
+import ComparisonSection from './components/ComparisonSection';
 import { ModelCasesSection } from './components/EarningMethods';
 import { HowItWorks } from './components/HowItWorks';
 import { MoneyFlowChartSection } from './components/MoneyFlowChartSection';
@@ -20,6 +21,7 @@ export default function FriendlyPage() {
         <HeroSection />
         {/* <RewardSystem /> */}
         <AppealsSection />
+        <ComparisonSection />
         <HowItWorks />
         <ModelCasesSection />
         <MoneyFlowChartSection />
