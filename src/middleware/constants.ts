@@ -17,9 +17,9 @@ export const COOKIE_EXPIRES_DAYS = 30;
 export const PATH_MAPPINGS = [
   // キャスト関連
   { pathPattern: /^\/cast\/std/, value: 'cast:cas' },
-  { pathPattern: /^\/cast\/lux/, value: 'cast:delicas' },
+  { pathPattern: /^\/cast\/lux/, value: 'cast:precas' },
   
   // カスタマー関連
   { pathPattern: /^\/customer\/std/, value: 'customer:cas' },
-  { pathPattern: /^\/customer\/lux/, value: 'customer:delicas' },
+  { pathPattern: /^\/customer\/lux/, value: 'customer:precas' },
 ];
