@@ -13,24 +13,29 @@ import { getValueFromPath } from './middleware/utils/path';
  * リクエストのパスに基づいてクッキーを設定する
  */
 export function middleware(request: NextRequest) {
-  // パスから設定すべき値を取得
   const path = request.nextUrl.pathname;
+  const accept = request.headers.get('accept') || '';
   const valueToSet = getValueFromPath(path);
-  
+
+  // HTMLリクエスト以外は何もしない
+  if (!accept.includes('text/html')) {
+    return NextResponse.next();
+  }
+
   // デバッグ用コンソールログ
   console.log(`ミドルウェアがパス ${path} で実行されました`);
   console.log(`設定すべき値: ${valueToSet}`);
-  
+
   // レスポンスを生成
   const response = NextResponse.next();
-  
+
   // 設定すべき値がある場合のみクッキーを設定
   // すでにクッキーが存在する場合は上書きする
   if (valueToSet) {
     console.log(`クッキーを設定します: ${valueToSet}`);
     setCookieValue(response, valueToSet);
   }
-  
+
   return response;
 }
 
