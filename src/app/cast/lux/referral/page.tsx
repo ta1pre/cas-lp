@@ -3,6 +3,8 @@ import React from "react";
 import { Container, Box, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { CTAModal } from "./components/CTAModal";
+import { FixedCTAButton } from "./components/FixedCTAButton";
 
 /**
  * スマホファーストで見た目を整えた紹介 LP ページ。
@@ -62,32 +64,40 @@ const ReferralPage = async () => {
   }
 
   return (
-    <Container maxWidth="md" className="py-12 px-4 md:px-0">
-      {/* タイトル */}
-      <Typography component="h1" className="text-white bg-pink-500 font-bold rounded-md text-left mt-6 mb-4 px-4 py-3 text-2xl sm:text-3xl md:text-4xl shadow-md"
-      >
-        {data.title}
-      </Typography>
-      <div className="h-6" />
-      {/* アイキャッチ画像 */}
-      {data.eyeCatch?.url && (
-        <Box className="flex justify-center mb-8">
-          <Image
-            src={data.eyeCatch.url}
-            alt={data.eyeCatch.alt ?? data.title}
-            width={600}
-            height={400}
-            className="rounded-lg shadow-md w-full h-auto object-cover max-h-[280px] md:max-h-[400px]"
-          />
-        </Box>
-      )}
+    <div className="min-h-screen flex flex-col bg-white relative">
+      <main className="flex-grow flex flex-col items-center">
+        <Container maxWidth="md" className="py-12 px-4 md:px-0 w-full">
+          {/* タイトル */}
+          <Typography component="h1" className="text-white bg-pink-500 font-bold rounded-md text-left mt-6 mb-4 px-4 py-3 text-2xl sm:text-3xl md:text-4xl shadow-md"
+          >
+            {data.title}
+          </Typography>
+          <div className="h-6" />
+          {/* アイキャッチ画像 */}
+          {data.eyeCatch?.url && (
+            <Box className="flex justify-center mb-8">
+              <Image
+                src={data.eyeCatch.url}
+                alt={data.eyeCatch.alt ?? data.title}
+                width={600}
+                height={400}
+                className="rounded-lg shadow-md w-full h-auto object-cover max-h-[280px] md:max-h-[400px]"
+              />
+            </Box>
+          )}
 
-      {/* 本文（prose で読みやすく、見出しを装飾） */}
-      <Box
-        className="prose prose-pink max-w-none mx-auto prose-h2:text-lg sm:prose-h2:text-xl md:prose-h2:text-2xl prose-h2:bg-pink-50 prose-h2:px-3 prose-h2:py-1 prose-h2:rounded-md prose-h2:text-pink-700 prose-h3:text-base sm:prose-h3:text-lg md:prose-h3:text-xl prose-h3:bg-pink-50 prose-h3:px-2 prose-h3:py-1 prose-h3:rounded prose-h3:text-pink-700"
-        dangerouslySetInnerHTML={{ __html: data.body }}
-      />
-    </Container>
+          {/* 本文（prose で読みやすく、見出しを装飾） */}
+          <Box
+            className="prose prose-pink max-w-none mx-auto prose-h2:text-lg sm:prose-h2:text-xl md:prose-h2:text-2xl prose-h2:bg-pink-50 prose-h2:px-3 prose-h2:py-1 prose-h2:rounded-md prose-h2:text-pink-700 prose-h3:text-base sm:prose-h3:text-lg md:prose-h3:text-xl prose-h3:bg-pink-50 prose-h3:px-2 prose-h3:py-1 prose-h3:rounded prose-h3:text-pink-700"
+            dangerouslySetInnerHTML={{ __html: data.body }}
+          />
+        </Container>
+      </main>
+      {/* CTAモーダル */}
+      <CTAModal delayInSeconds={1} scrollThreshold={80} />
+      {/* 固定CTAボタン */}
+      <FixedCTAButton />
+    </div>
   );
 };
 
