@@ -10,6 +10,10 @@
     "dev:lp": "PORT=3002 next dev"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.1.0",
+    "@mui/material": "^7.1.0",
     "framer-motion": "^12.6.3",
     "lucide-react": "^0.487.0",
     "microcms-js-sdk": "^3.2.0",
