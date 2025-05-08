@@ -5,7 +5,7 @@
 
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import { setCookieValue } from './middleware/utils/cookie';
+import { setCookieValue, setTrackingCookie } from './middleware/utils/cookie';
 import { getValueFromPath } from './middleware/utils/path';
 
 /**
@@ -16,6 +16,9 @@ export function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
   const accept = request.headers.get('accept') || '';
   const valueToSet = getValueFromPath(path);
+  
+  // トラッキングIDのクエリパラメータを取得
+  const trackingId = request.nextUrl.searchParams.get('tr');
 
   // HTMLリクエスト以外は何もしない
   if (!accept.includes('text/html')) {
@@ -25,6 +28,9 @@ export function middleware(request: NextRequest) {
   // デバッグ用コンソールログ
   console.log(`ミドルウェアがパス ${path} で実行されました`);
   console.log(`設定すべき値: ${valueToSet}`);
+  if (trackingId) {
+    console.log(`トラッキングID: ${trackingId}`);
+  }
 
   // レスポンスを生成
   const response = NextResponse.next();
@@ -34,6 +40,12 @@ export function middleware(request: NextRequest) {
   if (valueToSet) {
     console.log(`クッキーを設定します: ${valueToSet}`);
     setCookieValue(response, valueToSet);
+  }
+
+  // トラッキングIDがある場合、トラッキングcookieを設定
+  if (trackingId) {
+    console.log(`トラッキングcookieを設定します: ${trackingId}`);
+    setTrackingCookie(response, trackingId);
   }
 
   return response;

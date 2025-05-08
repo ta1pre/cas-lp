@@ -22,9 +22,9 @@ export function LineLoginButton({
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleLogin = () => {
-    // URLからtracking_idを取得（必要な場合）
+    // URLからtracking_idまたはtrパラメータを取得（必要な場合）
     const urlParams = new URLSearchParams(window.location.search);
-    const trackingId = urlParams.get('tracking_id') || 'DEFAULT_ID';
+    const trackingId = urlParams.get('tracking_id') || urlParams.get('tr') || 'DEFAULT_ID';
     
     // LINE認証URLを直接構築
     const state = `tracking_id=${trackingId}`;
