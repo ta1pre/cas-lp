@@ -29,7 +29,7 @@ export default function EnquetePage() {
         <div className="w-full bg-white pt-3 pb-3 border-t border-gray-200">
           {/* 追加するテキスト */}
           <p className="text-center text-red-600 font-bold mb-2">
-            ＼ もれなく1万円分のボーナスポイント進呈中！ ／
+            ＼ もれなく8,000円分のボーナスポイント進呈中！ ／
           </p>
           <LineLoginButton />
         </div>

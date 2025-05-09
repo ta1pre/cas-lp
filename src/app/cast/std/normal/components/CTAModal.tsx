@@ -94,7 +94,7 @@ export function CTAModal({
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.3 }}
                 >
-                  ＼ もれなく1万円分のポイント進呈中！ ／
+                  ＼ もれなく8,000円分のポイント進呈中！ ／
                 </motion.p>
                 
                 <motion.div 

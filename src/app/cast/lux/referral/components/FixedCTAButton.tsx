@@ -44,7 +44,7 @@ export function FixedCTAButton({
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.3 }}
             >
-              ＼ もれなく1万円分のボーナスポイント進呈中！ ／
+              ＼ もれなく8,000円分のボーナスポイント進呈中！ ／
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 5 }}
