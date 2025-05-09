@@ -41,8 +41,9 @@ export const RegistrationSection: React.FC = () => {
           }}
         >
           あなたの紹介で、お友達もデビュー！<br />
-          ふたりともに、<span className="font-bold">10,000ポイントGET</span>🎉<br />
-          今だけの限定キャンペーン、いますぐチェック！
+          <span className="font-bold">5,000ポイントGET</span>🎉<br />
+          今だけの限定キャンペーン、いますぐチェック！<br />
+          配布ポイント総額1億円！<br />
         </p>
         <p
           className="text-xs mt-2"
